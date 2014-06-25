@@ -33,7 +33,7 @@
 //        }
         
         NSLog(@"hello");
-        [_generationLabel setString:@"hello"];
+//        [_generationLabel setString:@"hello"];
         
         
         
