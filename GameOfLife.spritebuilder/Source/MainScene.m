@@ -7,11 +7,11 @@
 //
 
 #import "MainScene.h"
-#import "Grid.h"
+//#import "Grid.h"
 
 @implementation MainScene {
-    Grid *_grid;
-    CCTimer *_timer;
+//    Grid *_grid;
+//    CCTimer *_timer;
     CCLabelTTF *_generationLabel;
     CCLabelTTF *_populationLabel;
 }
@@ -21,7 +21,7 @@
     self = [super init];
     
     if (self) {
-        _timer = [[CCTimer alloc] init];
+//        _timer = [[CCTimer alloc] init];
         
 //        _populationLabel.string = @"1";
 //        
@@ -29,6 +29,10 @@
 //        for (CCLabelTTF* label in labels) {
 //            label.string = @"1";
 //        }
+        
+        [_generationLabel setString:@"hello"];
+        
+        
         
     }
     
@@ -50,8 +54,8 @@
 - (void)step
 {
 //    [_grid evolveStep];
-    _generationLabel.string = [NSString stringWithFormat:@"%d", _grid.generation];
-    _populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
+//    _generationLabel.string = [NSString stringWithFormat:@"%d", _grid.generation];
+//    _populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
 }
 
 @end
