@@ -23,6 +23,8 @@
     if (self) {
         _timer = [[CCTimer alloc] init];
         
+        _populationLabel.string = @"1";
+        
 //        NSArray* labels = @[_generationLabel, _populationLabel];
 //        for (CCLabelTTF* label in labels) {
 //            label.string = @"1";
