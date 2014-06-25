@@ -7,7 +7,26 @@
 //
 
 #import "MainScene.h"
+#import "Grid.h"
 
-@implementation MainScene
+@implementation MainScene {
+    Grid *_grid;
+    CCTimer *_timer;
+    CCLabelTTF *_generationLabel;
+    CCLabelTTF *_populationLabel;
+}
+
+- (id)init
+{
+    self = [super init];
+    
+    if (self) {
+        _timer = [[CCTimer alloc] init];
+        
+        _generationLabel.string = @"0";
+    }
+    
+    return self;
+}
 
 @end
