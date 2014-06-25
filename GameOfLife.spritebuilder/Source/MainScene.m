@@ -14,6 +14,8 @@
 //    CCTimer *_timer;
     CCLabelTTF *_generationLabel;
     CCLabelTTF *_populationLabel;
+    
+    CCSprite* _grid;
 }
 
 - (id)init
