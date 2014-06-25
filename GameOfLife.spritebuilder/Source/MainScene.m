@@ -24,6 +24,10 @@
         _timer = [[CCTimer alloc] init];
         
         NSArray* labels = @[_generationLabel, _populationLabel];
+        for (CCLabelTTF* label in labels) {
+            label.string = @"1";
+        }
+        
     }
     
     return self;
