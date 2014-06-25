@@ -23,7 +23,7 @@
     if (self) {
         _timer = [[CCTimer alloc] init];
         
-        _generationLabel.string = @"0";
+        _generationLabel.string = @"1";
     }
     
     return self;
