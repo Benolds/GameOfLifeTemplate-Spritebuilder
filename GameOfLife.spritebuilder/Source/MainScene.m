@@ -23,7 +23,7 @@
     if (self) {
         _timer = [[CCTimer alloc] init];
         
-        [_generationLabel setString:@"1"];
+        NSArray* labels = @[_generationLabel, _populationLabel];
     }
     
     return self;
