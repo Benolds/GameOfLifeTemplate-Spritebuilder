@@ -32,7 +32,7 @@
 //            label.string = @"1";
 //        }
         
-        NSLog(@"hello");
+//        NSLog(@"hello");
 //        [_generationLabel setString:@"hello"];
         
         
@@ -40,6 +40,16 @@
     }
     
     return self;
+}
+
+- (void)onEnter
+{
+    [super onEnter];
+    
+    NSArray* labels = @[_generationLabel, _populationLabel];
+    for (CCLabelTTF* label in labels) {
+        label.string = @"1";
+    }
 }
 
 - (void)play
