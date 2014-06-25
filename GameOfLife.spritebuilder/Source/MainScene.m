@@ -30,6 +30,7 @@
 //            label.string = @"1";
 //        }
         
+        NSLog(@"hello");
         [_generationLabel setString:@"hello"];
         
         
